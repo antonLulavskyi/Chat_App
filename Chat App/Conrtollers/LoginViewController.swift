@@ -22,12 +22,14 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func loginButtonPressed(_ sender: UIButton) {
-        Auth.auth().signIn(withEmail: emailTextField.text!, password: passwordTextField.text!) { (user, error) in
-            if error != nil {
-                print(error!)
-                //TODO: - create an alert for user
-            } else {
-                self.performSegue(withIdentifier: "fromLoginToChat", sender: self)
+        if let email = emailTextField.text, let password = passwordTextField.text {
+            Auth.auth().signIn(withEmail: email, password: password) { (user, error) in
+                if let er = error {
+                    print(er)
+                    //TODO: - create an alert for user
+                } else {
+                    self.performSegue(withIdentifier: "fromLoginToChat", sender: self)
+                }
             }
         }
     }

@@ -22,25 +22,18 @@ class RegisterViewController: UIViewController {
     }
     
     @IBAction func registerButtonPressed(_ sender: UIButton) {
-        
-        Auth.auth().createUser(withEmail: emailTextField.text!, password: passwordTextField.text!) { (result, error) in
-            if error != nil {
-                print(error!)
-            } else {
-                self.performSegue(withIdentifier: "fromRegister", sender: self)
-                print("Registration successful")
+        if let email = emailTextField.text, let password = passwordTextField.text {
+            Auth.auth().createUser(withEmail: email, password: password) { (result, error) in
+                if error != nil {
+                    print(error!)
+                } else {
+                    self.performSegue(withIdentifier: "fromRegister", sender: self)
+                    print("Registration successful")
+                }
             }
         }
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+  
 
 }

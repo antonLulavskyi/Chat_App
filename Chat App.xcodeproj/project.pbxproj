@@ -13,6 +13,7 @@
 		52333C2C236580AA0027B1CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52333C2A236580AA0027B1CD /* Main.storyboard */; };
 		52333C2E236580B00027B1CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52333C2D236580B00027B1CD /* Assets.xcassets */; };
 		52333C31236580B00027B1CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52333C2F236580B00027B1CD /* LaunchScreen.storyboard */; };
+		524E6541236D89B8006CE8E0 /* Masseges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524E6540236D89B8006CE8E0 /* Masseges.swift */; };
 		5293C05323699DE40057F86F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5293C05223699DE40057F86F /* GoogleService-Info.plist */; };
 		52C1CE1C236AC84E0039AAE5 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C1CE1B236AC84E0039AAE5 /* RegisterViewController.swift */; };
 		52C1CE1E236AC85B0039AAE5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C1CE1D236AC85B0039AAE5 /* LoginViewController.swift */; };
@@ -30,6 +31,7 @@
 		52333C2D236580B00027B1CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52333C30236580B00027B1CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		52333C32236580B00027B1CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		524E6540236D89B8006CE8E0 /* Masseges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Masseges.swift; sourceTree = "<group>"; };
 		5293C05223699DE40057F86F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		52C1CE1B236AC84E0039AAE5 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		52C1CE1D236AC85B0039AAE5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -87,8 +89,17 @@
 				52333C2D236580B00027B1CD /* Assets.xcassets */,
 				52333C32236580B00027B1CD /* Info.plist */,
 				52C1CE1A236AC7D10039AAE5 /* Supporting files */,
+				524E6542236D89BF006CE8E0 /* Model */,
 			);
 			path = "Chat App";
+			sourceTree = "<group>";
+		};
+		524E6542236D89BF006CE8E0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				524E6540236D89B8006CE8E0 /* Masseges.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		52C1CE18236AC7960039AAE5 /* Conrtollers */ = {
@@ -247,6 +258,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				52333C29236580AA0027B1CD /* StartViewController.swift in Sources */,
+				524E6541236D89B8006CE8E0 /* Masseges.swift in Sources */,
 				52333C25236580AA0027B1CD /* AppDelegate.swift in Sources */,
 				52333C27236580AA0027B1CD /* SceneDelegate.swift in Sources */,
 				52F9539E236C50EB002FC6D7 /* CustomTableViewCell.swift in Sources */,
